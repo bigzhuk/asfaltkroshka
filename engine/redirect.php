@@ -1,9 +1,8 @@
 <?php 
 
 	$redirect = '';
-
-	if (isset($_SERVER['REDIRECT_URL'])){
-		$redirect_ = explode('/', $_SERVER['REDIRECT_URL']);
+	if (isset($_SERVER['REQUEST_URI'])){
+		$redirect_ = explode('/', $_SERVER['REQUEST_URI']);
 		foreach ($redirect_ as $key => $value) {
 			if ($value !== ''){
 				$redirect .= '/'.$value;
