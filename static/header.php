@@ -7,7 +7,7 @@
 				<td id="phones">
 					+7 (495) 409-48-78<br>
 					+7 (925) 898-43-57
-					@TODO сделать форму - заказ обратного звонка. Как на dadget.ru.
+					@TODO Указать время, когда принимаются звонки! Сделать форму - заказ обратного звонка. Как на dadget.ru.
 					(Использовать inputmask для номера.)
 				</td>
 				<td><div id="logo"></div></td>
@@ -26,11 +26,11 @@
 			<center>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="/home">Главная</a>
+					<a class="main_menu_link" href="/service">Услуги</a>
 				</div>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="/service">Услуги (гл)</a>
+					<a class="main_menu_link" href="/about">О компании</a>
 				</div>
 
 				<div class="menu_section">

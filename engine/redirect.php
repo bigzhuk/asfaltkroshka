@@ -19,7 +19,7 @@
 			include 'pages/error404.php';
 		}
 	} else {
-		include 'pages/home.php';
+		include 'pages/service.php';
 	}
 	
 ?>
