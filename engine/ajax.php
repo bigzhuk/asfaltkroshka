@@ -1,6 +1,6 @@
 <?php 
 	# Подключаем конфигурацию
-	include('/var/www/user/data/www/franch.minon.ru/engine/config.php');
+	include('engine/config.php');
 
 	# Перенаправление на пользовательскую функцию
 	if (isset($_POST['action']) && $_POST['action']!==''){

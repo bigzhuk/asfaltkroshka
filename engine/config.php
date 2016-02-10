@@ -17,10 +17,11 @@
 	
 	# Параметры базы данных
 	$db_hostname = 'localhost';
-	$db_username = '';
-	$db_password = '';
-	$db_database = '';
-	include($GLOBALS['path'].'/engine/mysql.php');
+	$db_username = 'asfaltkroshka';
+	$db_password = 'axRRtEmu8nvrBKLD';
+	$db_database = 'asfaltkroshka';
+	//include($GLOBALS['path'].'/engine/mysql.php');
+	include('engine/mysql.php');
 
 	# Класс для работы с БД
 	$sql = new MySQL($db_hostname, $db_username, $db_password, $db_database);

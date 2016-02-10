@@ -1,4 +1,3 @@
-<?php //include('engine/config.php'); ?>	
 <?php include('engine/ajax.php'); ?>	
 <!DOCTYPE html>
 <html lang="ru">
@@ -9,9 +8,9 @@
 	<title>СтройДор</title>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-	<script src="http://asfaltkroshka.minon.ru/js/script.js"></script>
+	<script src="js/script.js"></script>
 
-	<link rel="stylesheet/less" href="http://asfaltkroshka.dev/style/style.less?q=<?php echo rand(1, 9999); ?>">
+	<link rel="stylesheet/less" href="http://localhost/asfaltkroshka/style/style.less?q=<?php echo rand(1, 9999); ?>">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 	<script src="js/script.js"></script>
 	

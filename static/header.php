@@ -13,7 +13,7 @@
 				<td><div id="logo"></div></td>
 				<td id="mails">
 					info@asfaltkroshka.com<br>
-					ул. Какая-то, 25
+					г.Пушкино, ул Заводская, 9
 				</td>
 			</tr>
 		</tbody>
@@ -26,19 +26,19 @@
 			<center>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="/service">Услуги</a>
+					<a class="main_menu_link" href="service">Услуги</a>
 				</div>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="/about">О компании</a>
+					<a class="main_menu_link" href="about">О компании</a>
 				</div>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="/price_list">Прайс-лист</a>
+					<a class="main_menu_link" href="price_list">Прайс-лист</a>
 				</div>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="/work">Наши работы</a>
+					<a class="main_menu_link" href="work">Наши работы</a>
 					<ul>
 						<li><a class="main_menu_link" href="/work/asfaltirovanie">Lorem</a></li>
 						<li><a class="main_menu_link" href="/work/blasgoustroistvo">Ipsum</a></li>

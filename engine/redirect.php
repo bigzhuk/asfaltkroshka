@@ -1,5 +1,7 @@
 <?php 
 
+	$_SERVER['REQUEST_URI'] = str_replace('/asfaltkroshka', '', $_SERVER['REQUEST_URI']);
+
 	$redirect = '';
 	if (isset($_SERVER['REQUEST_URI'])){
 		$redirect_ = explode('/', $_SERVER['REQUEST_URI']);
