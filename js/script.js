@@ -1,9 +1,6 @@
 $(document).ready(function() {
 	scrollPage();
 	$(window).on('scroll', scrollPage);
-
-		
-
 });
 
 function scrollPage(){

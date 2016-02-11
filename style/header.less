@@ -11,13 +11,22 @@
 			vertical-align: middle;	
 			color: white;
 			font-size: 20px;	
+			a{
+				color: @yellow;
+				cursor: pointer;
+				transition: text-shadow .2s;
+				text-shadow: 0 0 5px rgba(0,0,0,.75);
+			}
+			a:hover{
+				text-shadow: 0 0 5px rgba(0,0,0,0);
+			}
 		}
 		#logo{
 			height: 60px;	
 			width: 200px;	
 			height: 50px;	
 			padding: 30px;	
-			background: url('/images/logo2.png') no-repeat center center transparent;
+			background: url('/asfaltkroshka/images/logo.png') no-repeat center center transparent;
 			display: inline-block;
 		}
 	}

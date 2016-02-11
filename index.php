@@ -21,6 +21,7 @@
 	<div id="background"></div>
 
 	<div id="wrapper">
+		<div id="mask" onclick="hidePopup();"></div>
 		<?php include('static/header.php'); ?>	
 		<div id="content">
 			<?php include('engine/redirect.php'); ?>

@@ -21,9 +21,11 @@
 	$db_password = 'axRRtEmu8nvrBKLD';
 	$db_database = 'asfaltkroshka';
 	//include($GLOBALS['path'].'/engine/mysql.php');
-	include('engine/mysql.php');
-
+	include('mysql.php');
 	# Класс для работы с БД
 	$sql = new MySQL($db_hostname, $db_username, $db_password, $db_database);
+
+	include('mail.php');
+	$mailSMTP = new SendMailSmtpClass();
 
 ?>
