@@ -10,7 +10,7 @@
 
 	<script src="js/script.js"></script>
 
-	<link rel="stylesheet/less" href="http://asfaltkroshka.dev/style/style.less?q=<?php echo rand(1, 9999); ?>">
+	<link rel="stylesheet/less" href="http://asfaltkroshka.minon.ru/style/style.less?q=<?php echo rand(1, 9999); ?>">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 	<script src="js/script.js"></script>
 	
