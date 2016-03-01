@@ -5,7 +5,7 @@
 	<script>console.groupCollapsed('Загрузка');</script>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<meta charset="UTF-8">
-	<title>СтройДор</title>
+	<title>АсфальтСтройДор</title>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 	<script src="js/script.js"></script>
