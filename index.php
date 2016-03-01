@@ -19,7 +19,7 @@
 <body>
 
 	<div id="background"></div>
-
+aaaaaaaaaa
 	<div id="wrapper">
 		<div id="mask" onclick="hidePopup();"></div>
 		<?php include('static/header.php'); ?>	
