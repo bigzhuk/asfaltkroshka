@@ -25,7 +25,12 @@
 					<!-- @TODO Указать время, когда принимаются звонки! Сделать форму - заказ обратного звонка. Как на dadget.ru. -->
 					<!-- (Использовать inputmask для номера.) -->
 				</td>
-				<td><div id="logo"></div></td>
+				<script language="JavaScript">
+					function goHome() {
+						location='http://'+window.location.host;
+					}
+				</script>
+				<td><div id="logo" onclick="goHome();"></div></td>
 				<td id="mails">
 					info@asfaltkroshka.com<br>
 					<a onclick="showMap();">г.Пушкино, ул Заводская, 9</a>
@@ -41,15 +46,15 @@
 			<center>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="service">Услуги</a>
+					<a class="main_menu_link" href="/service">Услуги</a>
 				</div>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="about">О компании</a>
+					<a class="main_menu_link" href="/about">О компании</a>
 				</div>
 
 				<div class="menu_section">
-					<a class="main_menu_link" href="price_list">Прайс-лист</a>
+					<a class="main_menu_link" href="/price_list">Прайс-лист</a>
 				</div>
 
 				<!-- <div class="menu_section">
