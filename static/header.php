@@ -52,7 +52,7 @@
 					<a class="main_menu_link" href="price_list">Прайс-лист</a>
 				</div>
 
-				<div class="menu_section">
+				<!-- <div class="menu_section">
 					<a class="main_menu_link" href="work">Наши работы</a>
 					<ul>
 						<li><a class="main_menu_link" href="/work/asfaltirovanie">Lorem</a></li>
@@ -64,7 +64,7 @@
 
 				<div class="menu_section">
 					<a class="main_menu_link" href="/video">Видео</a>
-				</div>
+				</div> -->
 
 				<div class="menu_section">
 					<a class="main_menu_link" href="/contacts">Контакты</a>

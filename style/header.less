@@ -5,28 +5,32 @@
 
 	#header_top{
 		width: 100%;
+		background: url('/images/header_bg.png') repeat center center transparent;
 		td{
 			text-align: center;	
 			width: 33%;	
 			vertical-align: middle;	
 			color: white;
-			font-size: 20px;	
+			font-size: 20px;
 			a{
 				color: @yellow;
 				cursor: pointer;
 				transition: text-shadow .2s;
 				text-shadow: 0 0 5px rgba(0,0,0,.75);
+				border-bottom: 1px dotted @yellow;
+				line-height: 1em;
+				display: inline-block;
 			}
 			a:hover{
 				text-shadow: 0 0 5px rgba(0,0,0,0);
 			}
 		}
 		#logo{
-			height: 60px;	
-			width: 200px;	
+			height: 85px;	
+			width: 600px;	
 			height: 50px;	
 			padding: 30px;	
-			background: url('/asfaltkroshka/images/logo.png') no-repeat center center transparent;
+			background: url('/images/logo.png') no-repeat center center transparent;
 			display: inline-block;
 		}
 	}
@@ -45,6 +49,7 @@
 		background: @dark_gray;
 		position: absolute;
 		width: 100%;
+		z-index: 3;
 		#main_menu{
 			display: inline-block;
 			z-index: 2;

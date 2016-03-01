@@ -40,7 +40,7 @@ html, body {
 .popup{
 	display: none;
 	position: fixed;
-	background: url('/asfaltkroshka/images/line_bg.png') center center @yellow;
+	background: url('/images/line_bg.png') center center @yellow;
 	padding: 10px;
 	box-shadow: 0 0 10px rgba(0,0,0,.25), 0 0 3px rgba(0,0,0,.25) inset;
 	border-radius: 8px;
@@ -67,7 +67,7 @@ html, body {
 	position: fixed;
 	top: 0;
 	background-color: @dark_gray;
-	background-image: url('/asfaltkroshka/images/bg.jpg');
+	background-image: url('/images/bg.jpg');
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -81,7 +81,7 @@ h1{
 	font-weight: bold;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	background: url('/asfaltkroshka/images/line_bg.png') center center @yellow;
+	background: url('/images/line_bg.png') center center @yellow;
 	border-radius: 8px;
 	padding: 4px;
 	margin: 30px;
@@ -93,7 +93,7 @@ h2{
 	color: @dark_gray;
 	font-size: 24px;
 	text-transform: uppercase;	
-	background: url('/asfaltkroshka/images/h2_bg.png') center center no-repeat transparent;
+	background: url('/images/h2_bg.png') center center no-repeat transparent;
 }
 
 p{
@@ -106,7 +106,7 @@ ul{
 	li{
 		font-weight: 100;
 		margin-bottom: 10px;
-		list-style-image: url('/asfaltkroshka/images/list_dot.png');
+		list-style-image: url('/images/list_dot.png');
 		font-size: 20px;
 		font-style: italic;
 		color: @dark_gray;
@@ -117,10 +117,10 @@ ul{
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -70px;
+	margin: 0 auto -50px;
 }
 #wrapper_push {
-	height: 70px;
+	height: 50px;
 }
 
 #content{
@@ -163,5 +163,21 @@ ul{
 	}
 	p:last-child{
 		margin-bottom: 0;
+	}
+}
+#contacts_table{
+	font-weight: 100;	
+	border-collapse: collapse;
+	tbody{
+		tr{
+			td{
+				border: 1px solid #eee;
+				padding: 5px 10px;
+				// vertical-align: top;
+			}
+			td:first-child{
+				text-align: right;
+			}
+		}
 	}
 }
