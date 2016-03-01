@@ -34,11 +34,11 @@
 					<div class="text">Продажа асфальтовой крошки</div>
 				</a>
 				<a href="service/ukladka_tratuarnoi_plitki">
-					<div class="image" style="background-image: url('images/menu_item_09.jpg');"></div>
+					<div class="image" style="background-image: url('images/menu_item_13.jpg');"></div>
 					<div class="text">Укладка тротуарной плитки</div>
 				</a>
 				<a href="service/ustanovka_bortovih_kamnei">
-					<div class="image" style="background-image: url('images/menu_item_09.jpg');"></div>
+					<div class="image" style="background-image: url('images/menu_item_14.jpg');"></div>
 					<div class="text">Установка бортовых камней</div>
 				</a>
 				
