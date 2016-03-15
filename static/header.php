@@ -18,8 +18,8 @@
 		<tbody>
 			<tr>
 				<td id="phones">
-					<div style="color: white">+7 (495) 409-48-78</div>
-					<div style="color: white">+7 (925) 898-43-57</div>
+					<div style="color: white !important">+7(495)409-48-78</div>
+					<div style="color: white !important">+7(925)898-43-57</div>
 					<a id="show_recall_btn" onclick="show_recall();">Обратный звонок</a>
 					<!-- @TODO Указать время, когда принимаются звонки! Сделать форму - заказ обратного звонка. Как на dadget.ru. -->
 					<!-- (Использовать inputmask для номера.) -->
