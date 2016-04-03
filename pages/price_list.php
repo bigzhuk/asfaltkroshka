@@ -1,5 +1,5 @@
 <h1>Прайс лист</h1>
-<div class="container">
+<div class="main_page_container">
 	<div id="pricelist_wrapper">	
 		<table id="pricelist">
 			<thead>
