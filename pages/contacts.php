@@ -1,6 +1,6 @@
 <h1>Контакты</h1>
 
-<div class="main_page_container">
+<div class="container">
 <p>
 	<center>
 		<table id="contacts_table">

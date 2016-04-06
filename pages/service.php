@@ -1,5 +1,5 @@
 <h1>Услуги</h1>
-<div class="main_page_container">
+<div class="container">
 	<center>
 		<div id="services_wrapper">
 			<ul id="services">
