@@ -35,69 +35,54 @@
 	}
 </style>
 
-<?php 
+<?php
+function get_photo_folders() {
+	return array(
+		'asfaltirovanie' => 'Асфальтирование',
+		'asfaltirovanie-stoyanok-i-parkovok' => 'Асфальтирование стоянок и парковок',
+		'blagoustroistvo' => 'Благоустройство',
+		'zemlyanie-raboti' => 'Земляные работы',
+		'gruntovie-raboti' => 'Грунтовые работы',
+		'yamochnii-remont' => 'Ямочный ремонт',
+		'raboti-v-chastnom-sektore' => 'Работы в частном секторе',
+		'nasha-tehnika' => 'Наша техника',
+	);
+}
 
-	$folder ['title'] = 'Асфальтирование';
-	$folder ['folder'] = 'asfaltirovanie';
-	$folders[] = $folder;
+function draw_photo_table($folder, $title) {
+	$out = '
+	<h2>'.$title.'</h2>
+	<table class="mini_gallery" cellspacing="10">
+			<tbody>
+				<tr class="parent-container">'
+		.draw_photo_tr($folder).'
+				</tr>
+			</tbody>
+	</table>';
+	return $out;
+}
 
-	$folder ['title'] = 'Асфальтирование стоянок и парковок';
-	$folder ['folder'] = 'asfaltirovanie-stoyanok-i-parkovok';
-	$folders[] = $folder;
-
-	$folder ['title'] = 'Благоустройство';
-	$folder ['folder'] = 'blagoustroistvo';
-	$folders[] = $folder;
-
-	$folder ['title'] = 'Земляные работы';
-	$folder ['folder'] = 'zemlyanie-raboti';
-	$folders[] = $folder;
-
-	// $folder ['title'] = 'Кровельные работы';
-	// $folder ['folder'] = 'krovelnie-raboti';
-	// $folders[] = $folder;
-
-	$folder ['title'] = 'Грунтовые работы';
-	$folder ['folder'] = 'gruntovie-raboti';
-	$folders[] = $folder;
-
-	$folder ['title'] = 'Ямочный ремонт';
-	$folder ['folder'] = 'yamochnii-remont';
-	$folders[] = $folder;
-
-	$folder ['title'] = 'Работы в частном секторе';
-	$folder ['folder'] = 'raboti-v-chastnom-sektore';
-	$folders[] = $folder;
-
-	$folder ['title'] = 'Наша техника';
-	$folder ['folder'] = 'nasha-tehnika';
-	$folders[] = $folder;
-
+function draw_photo_tr($folder) {
+	$out = '';
+	for ($i=1; $i <= 10; $i++) {
+		$i = $i < 10 ? '0'.$i : $i;
+		if(is_file('images/photo/'.$folder.'/'.$i.'.jpg')) {
+			$out.= '<td style="background-image: url(\'images/photo/'.$folder.'/'.$i.'.jpg\')"
+			href="images/photo_big/'.$folder.'/'.$i.'.jpg"></td>';
+		}
+	}
+	return $out;
+}
 ?>
 
 <h1>Галерея</h1>
 <div class="container">
-
-
-	<?php foreach ($folders as $key => $folder) { ?>
-
-		<h2><?php echo $folder['title']; ?></h2>
-
-		<table class="mini_gallery" cellspacing="10">
-			<tbody>
-			<tr class="parent-container">
-				<?php for ($i=1; $i <= 10; $i++) { ?>
-				<?php if ($i<10){$i='0'.$i;} ?>
-					<?php if(is_file('images/photo/'.$folder['folder'].'/'.$i.'.jpg')){ ?>
-						<td style="background-image: url('images/photo/<?php echo $folder['folder']; ?>/<?php echo $i; ?>.jpg');" href="images/photo_big/<?php echo $folder['folder']; ?>/<?php echo $i; ?>.jpg"></td>
-					<? } ?>
-				<? } ?>
-			</tr>
-			</tbody>
-		</table>
-
-	<?php } ?>
-
+	<?php
+	$folders = get_photo_folders();
+	foreach ($folders as $folder => $title) {
+		echo draw_photo_table($folder, $title);
+	}
+	?>
 </div>
 
 <script>
