@@ -56,6 +56,14 @@
 					<a class="main_menu_link" href="/price_list">Прайс-лист</a>
 				</div>
 
+				<div class="menu_section">
+					<a class="main_menu_link" href="/photo">Галерея</a>
+				</div>
+
+				<div class="menu_section">
+					<a class="main_menu_link" href="/technology">Технология</a>
+				</div>
+
 				<!-- <div class="menu_section">
 					<a class="main_menu_link" href="work">Наши работы</a>
 					<ul>
