@@ -1,6 +1,6 @@
 <h1>Главная</h1>
 
-<div class="main_page_container">
+<div class="container">
 
 	<h2>
 		О компании
