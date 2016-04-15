@@ -1,8 +1,8 @@
 <div id="header">
 
 	<div id="recall_form" class="popup">
-		<input type="text" value="Имя"><br>
-		<input type="text" value="Телефон"><br>
+		<input id="name" type="text" value="Имя"><br>
+		<input id="phone" type="text" value="Телефон"><br>
 		<input id="recall_btn" type="button" value="Отправить" onclick="recall();">
 	</div>
 
@@ -31,7 +31,7 @@
 				</script>
 				<td><div id="logo" onclick="goHome();"></div></td>
 				<td id="mails">
-					info@asfaltkroshka.com<br>
+					stdorog@mail.ru<br>
 					<a onclick="showMap();">г.Пушкино, ул Заводская, 9</a>
 				</td>
 			</tr>
@@ -108,8 +108,10 @@
 	}
 
 	function recall(){
-		var phone = 'phone';
-		var name = 'name';
+		var phone = $('#phone').val();
+		var name = $('#name').val();
+
+		alert(phone);
 
 		$('#recall_btn').prop('disabled', 'disabled');
 		$.ajax({

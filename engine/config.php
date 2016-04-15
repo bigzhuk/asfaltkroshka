@@ -1,6 +1,6 @@
 <?php
 
-	$GLOBALS['path'] = '/var/www/asfaltkroshka';
+	$GLOBALS['path'] = '/var/www/asfaltkroshka'; //@todo что за хрень?
 
 	# Русский
 	setLocale(LC_ALL, 'ru_RU.UTF-8');
