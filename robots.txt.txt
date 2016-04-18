@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /engine
+Disallow: /test.php
+
+Host: asfalt-stroy-dor.ru
