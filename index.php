@@ -2,10 +2,10 @@
 class App {
 	public static  $pages = [
 		'/about' => 'О компании',
-		'/contacts' => 'Контактая информация',
+		'/contacts' => 'Контактная информация',
 		'/price_list' => 'Цены',
-		'/photo' => 'Гелерея работ',
-		'/tecknology' => 'Технрология строительсва дорог',
+		'/photo' => 'Галерея работ',
+		'/tecknology' => 'Технология строительсва дорог',
 		'/service/asfaltirovanie_dorog' => 'Асфальтирование дорог',
 		'/service/asfaltirovanie_malih_ploshadei' => 'Асфальтирование малых площадей',
 		'/service/prodaja_asfaltovoi_kroshki' => 'Продажа асфальтовой крошки',
