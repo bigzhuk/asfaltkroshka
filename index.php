@@ -1,6 +1,6 @@
 <?php
 class App {
-	public static  $pages = [
+	public static  $pages = array(
 		'/about' => 'О компании',
 		'/contacts' => 'Контактная информация',
 		'/price_list' => 'Цены',
@@ -14,9 +14,8 @@ class App {
 		'/service/ukladka_asfaltovoi_kroshki' => 'Укладка асфальтовой крошки',
 		'/service/ukladka_tratuarnoi_plitki' => 'Укладка тратуарной плитки',
 		'/service/ustanovka_bortovih_kamnei' => 'Установка бортовых камней',
-		'/service/yamochnii_remont_dorog' => 'Ямочный ремонт дорог',
-
-	];
+		'/service/yamochnii_remont_dorog' => 'Ямочный ремонт дорог'
+	);
 
 	public static function getPageTitle() {
 		$current_page = $_SERVER['REQUEST_URI'];
