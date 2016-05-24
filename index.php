@@ -1,11 +1,41 @@
-<?php include('engine/ajax.php'); ?>	
+<?php
+class App {
+	public static  $pages = [
+		'/about' => 'О компании',
+		'/contacts' => 'Контактая информация',
+		'/price_list' => 'Цены',
+		'/photo' => 'Гелерея работ',
+		'/tecknology' => 'Технрология строительсва дорог',
+		'/service/asfaltirovanie_dorog' => 'Асфальтирование дорог',
+		'/service/asfaltirovanie_malih_ploshadei' => 'Асфальтирование малых площадей',
+		'/service/prodaja_asfaltovoi_kroshki' => 'Продажа асфальтовой крошки',
+		'/service/remont_dachnih_i_kottedjnih_dorog' => 'Ремонт дачных и коттеджных дорог',
+		'/service/stroitelstvo_dorog' => 'Строительство дорог',
+		'/service/ukladka_asfaltovoi_kroshki' => 'Укладка асфальтовой крошки',
+		'/service/ukladka_tratuarnoi_plitki' => 'Укладка тратуарной плитки',
+		'/service/ustanovka_bortovih_kamnei' => 'Установка бортовых камней',
+		'/service/yamochnii_remont_dorog' => 'Ямочный ремонт дорог',
+
+	];
+
+	public static function getPageTitle() {
+		$current_page = $_SERVER['REQUEST_URI'];
+		if(!empty(self::$pages[$current_page])) {
+			return self::$pages[$current_page];
+		}
+		return 'Строительсвтво и ремонт дорог';
+	}
+}
+?>
+
+<?php include('engine/ajax.php'); ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 	<script>console.groupCollapsed('Загрузка');</script>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<meta charset="UTF-8">
-	<title>АсфальтСтройДор</title>
+	<title><?=App::getPageTitle();?></title>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 	<script src="js/script.js"></script>
